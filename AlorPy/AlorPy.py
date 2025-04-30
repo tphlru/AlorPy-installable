@@ -31,7 +31,7 @@ class AlorPy:
     def __init__(self, refresh_token=Config.refresh_token, demo=False):
         """Инициализация
 
-        :param str refresh_token: Токен
+        :param str refresh_token: Токен (по умолчанию из конфига)
         :param bool demo: Режим демо торговли. По умолчанию установлен режим реальной торговли
         """
         self.oauth_server = f'https://oauth{"dev" if demo else ""}.alor.ru'  # Сервер аутентификации
